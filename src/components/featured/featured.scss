@@ -1,0 +1,81 @@
+.featured {
+    flex: 2;
+    border-radius: 1rem;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        color: gray;
+
+        .title {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        .featured-chart {
+            width: 150px;
+            height: 150px;
+        }
+
+        .title {
+            font-weight: 500;
+            color: gray;
+        }
+
+        .amount {
+            font-size: 3rem;
+        }
+
+        .desc {
+            font-weight: 300;
+            font-size: 1.4rem;
+            color: gray;
+            text-align: center;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+
+            .item {
+                text-align: center;
+
+                .item-title {
+                    font-size: 1.5rem;
+                    color: gray;
+                }
+
+                .item-result {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    margin-top: 1rem;
+
+                    &.positive {
+                        color: green;
+                    }
+
+                    &.negative {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+}
